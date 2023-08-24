@@ -1,0 +1,31 @@
+{
+    "type": "object",
+    "properties": {
+        "background": {
+            "type": "string",
+            "description": "Background information or context for the conversation"
+        },
+        "dialogue": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "human": {
+                        "type": "string",
+                    },
+                    "bot": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "human",
+                    "bot"
+                ]
+            }
+        }
+    },
+    "required": [
+        "background",
+        "dialogue"
+    ]
+}
